@@ -2,7 +2,8 @@ package lightSpeed
 
 import "fmt"
 
-func SayLightSpeed() {
-	var lightSpeed int = 300000
-	fmt.Printf("The light speed is a constant wich value is: %v Km/s", lightSpeed)
+var lightSpeed int = 300000
+
+func SayLightSpeed() string {
+	return fmt.Sprintf("The light speed is a constant wich value is: %v Km/s", lightSpeed)
 }
